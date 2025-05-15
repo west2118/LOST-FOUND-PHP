@@ -1,0 +1,150 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px 0;
+  transition: all 0.3s;
+  position: fixed;
+}
+
+.sidebar-header {
+  padding: 0 20px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-header h3 {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.sidebar-header p {
+  color: #b3b3b3;
+  font-size: 0.8rem;
+}
+
+.sidebar-menu {
+  padding: 20px 0;
+}
+
+.menu-category {
+  color: #b3b3b3;
+  font-size: 0.8rem;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu-item {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background-color: #34495e;
+  color: #fff;
+}
+
+.menu-item.active {
+  background-color: #3498db;
+}
+
+.menu-item i {
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+.submenu {
+  padding-left: 20px;
+  display: none;
+}
+
+.submenu.show {
+  display: block;
+}
+
+.submenu-item {
+  padding: 8px 20px 8px 30px;
+  display: flex;
+  align-items: center;
+  color: #b3b3b3;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.submenu-item:hover {
+  color: #fff;
+}
+
+.submenu-item.active {
+  color: #3498db;
+}
+
+.submenu-item i {
+  margin-right: 8px;
+  font-size: 0.8rem;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-left: auto;
+  transition: transform 0.3s;
+}
+
+.toggle-btn.rotate {
+  transform: rotate(90deg);
+}
+
+/* Font Awesome Icons (you can replace with actual FA or other icon library) */
+.fa {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.fa-dashboard:before {
+  content: "📊";
+}
+
+.fa-report:before {
+  content: "📝";
+}
+
+.fa-items:before {
+  content: "🛄";
+}
+
+.fa-add:before {
+  content: "➕";
+}
+
+.fa-edit:before {
+  content: "✏️";
+}
+
+.fa-delete:before {
+  content: "🗑️";
+}
+
+.fa-list:before {
+  content: "📋";
+}
+
+.fa-users:before {
+  content: "👥";
+}
+
+.fa-chevron-right:before {
+  content: "›";
+}
